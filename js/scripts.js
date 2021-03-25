@@ -21,6 +21,9 @@ var app = new Vue(
         if (this.imageIndex < 0) {
           this.imageIndex = this.images.length - 1;
         }
+      },
+      bulletClick: function(index) {
+        this.imageIndex = index;
       }
     }
   }
