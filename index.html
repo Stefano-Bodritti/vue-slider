@@ -15,11 +15,15 @@
     <div id="app">
       <div class="container">
         <div class="carousel">
-          <div class="arrow_left"><i class="fas fa-chevron-left"></i></div>
-          <div class="images">
-            <img src="https://www.100torri.it/newsite/wp-content/uploads/2017/06/chieri-centro.jpg" alt="Chieri">
+          <div class="arrow_left">
+            <i @click="imageLeft" class="fas fa-chevron-left"></i>
           </div>
-          <div class="arrow_right"><i class="fas fa-chevron-right"></i></div>
+          <div class="images">
+            <img v-bind:src="images[imageIndex]" alt="Chieri">
+          </div>
+          <div class="arrow_right">
+            <i @click="imageRight" class="fas fa-chevron-right"></i>
+          </div>
         </div>
       </div>
     </div>
