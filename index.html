@@ -20,6 +20,9 @@
           </div>
           <div class="images">
             <img v-bind:src="images[imageIndex]" alt="Chieri">
+            <div class="bullets">
+              <i v-for="(image, index) in images" v-bind:class="imageIndex == index ? 'active' : ''" class="fas fa-circle"></i>
+            </div>
           </div>
           <div class="arrow_right">
             <i @click="imageRight" class="fas fa-chevron-right"></i>

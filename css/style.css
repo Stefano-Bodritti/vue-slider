@@ -25,6 +25,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 0 20px;
+  position: relative;
 }
 
 .carousel img {
@@ -33,8 +34,27 @@ body {
   object-fit: cover;
 }
 
-i {
+.arrow_left i, .arrow_right i {
   font-size: 50px;
   color: blue;
   cursor: pointer;
+}
+
+.bullets {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 7px;
+}
+
+i.active {
+  color: blue;
+}
+
+.bullets i {
+  margin: 5px;
 }
