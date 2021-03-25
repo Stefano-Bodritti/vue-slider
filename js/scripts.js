@@ -24,6 +24,9 @@ var app = new Vue(
       },
       bulletClick: function(index) {
         this.imageIndex = index;
+      },
+      pressed: function() {
+        console.log(event.which);
       }
     }
   }
